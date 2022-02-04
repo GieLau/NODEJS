@@ -1,0 +1,29 @@
+{{#if message}}
+    <div class="message">{{message}}</div>
+{{/if}}
+
+<form method="POST" action="/formsubmit" enctype="multipart/form-data">
+    <input type="email" name="email" />
+    <input type="password" name="password" />
+    <select name ="uogos"> 
+        <option value="1">Avietes</option>
+        <option value="2">Braskes</option>
+        <option value="3">Vynuoges</option>
+    </select>
+    <div>
+        <label><input type="checkbox" name="test" value="12" />Test1</label>
+        <label><input type="checkbox" name="test" value="24" />Test2</label>
+        <label><input type="checkbox" name="test" value="10" />Test3</label>
+        <label><input type="checkbox" name="test" value="8" />Test4</label>
+    </div>
+    <div>
+        <label><input type="radio" name="radio" value="90" />Radio1</label>
+        <label><input type="radio" name="radio" value="80" />Radio2</label>
+        <label><input type="radio" name="radio" value="70" />Radio3</label>
+    </div>
+    <div>
+        <input type="file" name="failas" />
+    </div>
+
+    <button type="submit">Siųsti</button>
+</form>
